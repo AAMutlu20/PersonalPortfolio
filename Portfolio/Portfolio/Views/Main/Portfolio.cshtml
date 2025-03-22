@@ -1,0 +1,479 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndreyM</title>
+    <link rel="stylesheet" href="~/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="~/css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="~/css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="~/css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="~/css/color-4.css" class="alternate-style" title="color-4" >
+    <link rel="stylesheet" href="~/css/color-5.css" class="alternate-style" title="color-5" disabled>
+</head>
+<body class="dark">
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a asp-for="Home" asp-controller="Main"><span>P</span>ortfolio</a>
+            </div>
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" ><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services" ><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact" ><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section class="home section active" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Andrey Mutlu</span></h3>
+                            <h3 class="profession">I'm a <span class="typing">Student</span></h3>
+                            <p>I'm a student with a passion for game design and development. I also have experience in creating and designing web applications.</p>
+                            <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/andrey-mutlu/281d3dc1-9894-4f16-8010-a309e1278d34?view=html" class="btn ">Visit CV</a>
+                        </div>
+
+                        <div class="home-img padd-15">
+                            <img src="https://i.postimg.cc/jShB85t0/IMG-20231014-201821-356.jpg" alt="hero image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section " id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About me</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Andrey Mutlu and I'm a <span>CS Student</span></h3>
+                                    <p>As a computer science student I have mainly worked on web design and development trough my high school years. I have keen interest in game creation and have made have made several attempts at developing my own games. What is more, I enjoy 3D design and have experience in Blender, where I have made different kinds of renders.
+</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday: <span>20 Nov 2006</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Age: <span>18</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Website: <span>www.domain.com</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Email: <span>andrey.a.mutlu@gmail.com</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Degree: <span>CS</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Phone: <span>+359 87 7107 800</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>City: <span>Burgas</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Country: <span>Bulgaria</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" class="btn hire-me" data-section-index="1">Contact me!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>C++</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>C#</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 86%;"></div>
+                                                <div class="skill-percent">86%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML/CSS/JS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%;"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>Vue/Less/Typescript/Bootstrap</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%;"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%;"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                      
+                                        <div class="skill-item padd-15">
+                                            <h5>Java</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 67%;"></div>
+                                                <div class="skill-percent">67%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020 - Current
+                                                    </h3>
+                                                    <h4 class="timeline-title">DIPLOMA ZA ZAVARSCHENO SREDNO OBRAZOVANIE - EXPECTED IN JULY 2025</h4>
+                                                    <p class="timeline-text">In my high school I learnt a wide range of topics that are essential to understanding both the theory and practical aspects of computing. This involves programming fundamentals, computer architecture, operating systems, databases, software engineering, problem solving, collaboration and communication soft skills.</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020 - Current
+                                                    </h3>
+                                                    <h4 class="timeline-title">Various Certifications</h4>
+                                                    <p class="timeline-text">During my time in high school I took on multiple exam and skill assessments for different certifications. Most can be seen on my CV or trough my Credly profile.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020 - Today
+                                                    </h3>
+                                                    <h4 class="timeline-title">Internship: Backend Programmer</h4>
+                                                    <p class="timeline-text">In my time at Enloc I learned a lot about web development and teamwork coordination. My work consisted of further developing the backend of an application, as well as translating it from German to English and Bulgarian.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service section " id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Skills</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>I am able to construct custom and responsive website designs, ensure compatibility across devices, and UI/UX design to enhance user experience</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Graphic Design</h4>
+                                <p>I design logos, icons, illustrations, and other visual assets that enhance the website's branding and aesthetic appeal</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>3D Design</h4>
+                                <p>I have prior experience with 3D design tools such as Blender and am able to create various 3D models</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>I am able to create fully functional web applications, which offer scalability and great user experience</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-cubes"></i>
+                                </div>
+                                <h4>Game Development</h4>
+                                <p>I have experience with various game engines such as Unreal Engine 4 & 5, Unity and Godot Engine.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-camera"></i>
+                                </div>
+                                <h4>Photography</h4>
+                                <p>I am a hobbyist photographer and am able to take good quality photos and edit them. Most of them can be found in my instagram profile: "andreymutlu".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio section " id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects: </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://github.com/AAMutlu20/8Video-VUE">
+                                        <img src="https://i.postimg.cc/QthqWngD/8Video.png" alt="8Video Streaming Application" height=200px>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://github.com/AAMutlu20/Guidely">
+                                        <img src="https://i.postimg.cc/Bn9wNN48/image.png" alt="Guidely: Travel Application" height=200px>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://github.com/AAMutlu20/TeamThunderBolt">
+                                        <img src="https://i.postimg.cc/ZY3VDpRX/image-2025-03-22-193741361.png" alt="EAH">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://github.com/AAMutlu20/SaturnSync">
+                                        <img src="https://i.postimg.cc/MprL8x8L/image-2025-03-22-193859739.png" alt="Saturn Sync">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href="https://your-link-here.com">
+                                        <img src="https://i.postimg.cc/6qkhpZZP/image.png" alt="FlowVentory" height=200px>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="https://i.postimg.cc/rwWf74QD/black-hole.png" alt="Black Hole Render" height=200px>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact</h2>
+                        </div>
+                    </div>
+
+                    <h3 class="contact-title padd-15">Any Question? Contact me!</h3>
+                    <h4 class="contact-subtitle padd-15">I'll be happy to answer them!</h4>
+
+                    <div class="row">
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call me on</h4>
+                            <p>+359 87 7107 800</p>
+                        </div>
+
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>City</h4>
+                            <p>Burgas</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>andrey.a.mutlu@gmail.com</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe"></i></div>
+                            <h4>Website</h4>
+                            <p>www.domain.com</p>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Send me an email</h3>
+                    <h4 class="contact-subtitle padd-15">I'll contact you as soon as possible!</h4>
+
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="~/js/app.js"></script>
+</body>
+</html>
