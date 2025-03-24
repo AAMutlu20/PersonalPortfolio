@@ -1,7 +1,9 @@
+using Portfolio.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
@@ -21,9 +23,7 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Main}/{action=Portfolio}/{id?}")
-    .WithStaticAssets();
-
+    name: "default",
+    pattern: "{controller=Main}/{action=Portfolio}/{id?}");
 
 app.Run();
